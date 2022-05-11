@@ -221,7 +221,7 @@ def main():
             save_annotations(image_name, image, detections, class_names)
         darknet.print_detections(detections, args.ext_output)
         fps = int(1/(time.time() - prev_time))
-        print("FPS: {}".format(fps))
+        print("ffffffFPS: {}".format(fps))
         if not args.dont_show:
             cv2.imshow('Inference', image)
             if cv2.waitKey() & 0xFF == ord('q'):
