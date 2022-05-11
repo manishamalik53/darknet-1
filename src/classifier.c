@@ -1133,7 +1133,7 @@ void threat_classifier(char *datacfg, char *cfgfile, char *weightfile, int cam_i
         printf("\033[2J");
         printf("\033[1;1H");
 #endif
-        printf("\nFPS:%.0f\n",fps);
+        printf("\nmyyyyyFPS:%.0f\n",fps);
 
         for(i = 0; i < top; ++i){
             int index = indexes[i];
@@ -1315,7 +1315,7 @@ void demo_classifier(char *datacfg, char *cfgfile, char *weightfile, int cam_ind
 
 
         if (!benchmark) {
-            printf("\rFPS: %.2f  (use -benchmark command line flag for correct measurement)\n", fps);
+            printf("\reeeeeFPS: %.2f  (use -benchmark command line flag for correct measurement)\n", fps);
             for (i = 0; i < top; ++i) {
                 int index = indexes[i];
                 printf("%.1f%%: %s\n", predictions[index] * 100, names[index]);
@@ -1329,7 +1329,7 @@ void demo_classifier(char *datacfg, char *cfgfile, char *weightfile, int cam_ind
             if (c == 27 || c == 1048603) break;
         }
         else {
-            printf("\rFPS: %.2f \t AVG_FPS = %.2f ", fps, avg_fps);
+            printf("\reeeeeFPS: %.2f \t eeeeeeAVG_FPS = %.2f ", fps, avg_fps);
         }
 
         //gettimeofday(&tval_after, NULL);
