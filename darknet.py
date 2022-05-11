@@ -107,7 +107,7 @@ def load_network(config_file, data_file, weights, batch_size=1):
 
 
 def print_detections(detections, coordinates=False):
-    print("\nObjects:")
+    print("\nour own Objects:")
     for label, confidence, bbox in detections:
         x, y, w, h = bbox
         if coordinates:
